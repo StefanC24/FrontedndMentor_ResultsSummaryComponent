@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <fieldset class="result">
+        <p class="your_result">Your Result</p>
+        <div class="score">
+          <h1 class="score_result">76</h1>
+          <p class="score_out_of">of 100</p>
+        </div>
+        <h3 class="feedback">Great</h3>
+        <p class="result_feedback">You scored higher than 65% of the people who have taken these tests.</p>
+    </fieldset>
+    <fieldset class="summary_fieldset">
+        <h3 style="font-weight: bold; color: hsl(224, 30%, 27%);">Summary</h3>
+      <section class="summary_section reaction_section"> 
+        <div class="section_title ">
+          <img src="./assets/images/icon-reaction.svg">
+          <p class="reaction">Reaction</p>
+        </div>
+        <p class="section_score">80 <span class="goal_score">/ 100</span></p>
+      </section>
+      <section class="summary_section memory_section">
+        <div class="section_title">
+          <img src="./assets/images/icon-memory.svg">
+          <p class="memory">Memory</p>
+        </div>
+        <p class="section_score">92 <span class="goal_score">/ 100</span></p>
+      </section>
+      <section class="summary_section verbal_section">
+      <div class="section_title">
+        <img src="./assets/images/icon-verbal.svg">
+        <p class="verbal">Verbal</p>
+        </div>
+        <p class="section_score">61<span class="goal_score"> / 100</span></p>
+      </section>
+      <section class="summary_section visual_section">
+      <div class="section_title">
+        <img src="./assets/images/icon-visual.svg">
+        <p class="visual">Visual</p>
+        </div>
+        <p class="section_score">72 <span class="goal_score"> / 100</span></p>
+      </section class="summary_section">
+        <button class="continue_button">Continue</button>
+  </fieldset>
+</div>
+</body>
+</html>
